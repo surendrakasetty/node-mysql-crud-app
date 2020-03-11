@@ -14,7 +14,7 @@ const port = 2000;
 const db = mysql.createConnection ({
     host: '172.17.0.2',
     user: 'root',
-    password: '',
+    password: 'password',
     database: 'socka'
 });
 
