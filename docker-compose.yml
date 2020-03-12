@@ -1,0 +1,14 @@
+version: '3'
+services:
+  webapp:
+    build: .
+    ports:
+      - "2000:2000"
+    volumes:
+      - .:/usr/src/app/
+  db:
+    build: ./sql-scripts/
+    ports:
+      - "3306:3306"
+    volumes:
+      - . :/var/lib/mysql
