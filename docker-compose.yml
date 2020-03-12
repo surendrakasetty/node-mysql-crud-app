@@ -6,6 +6,7 @@ services:
       - "2000:2000"
     volumes:
       - .:/usr/src/app/
+      - /node_modules
     depends_on:
       - db
   db:
