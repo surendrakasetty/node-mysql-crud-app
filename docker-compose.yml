@@ -7,7 +7,7 @@ services:
     volumes:
       - .:/usr/src/app/
   db:
-    build: sql-scripts/
+    build: sql/
     ports:
       - "3306:3306"
     volumes:
